@@ -226,3 +226,27 @@ VALUES 			 			(1		,	1		),
                             (6		,	8		),
                             (7		,	9		),
                             (8		,	10		); 
+                            
+DROP TABLE IF EXISTS Student;
+CREATE TABLE `Student`(
+     Id		                    TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	 Student_Name				VARCHAR(50) NOT NULL,
+     Subject_Name		      	VARCHAR(50) NOT NULL,
+     Point_Student				TINYINT
+);
+
+SELECT * FROM Student;
+
+INSERT INTO Student (Student_Name, Subject_Name, Point_Student)
+VALUES				('Name1',	'Sql', 		'7'),
+					('Name2',	'Java', 	'8'),
+                    ('Name3',	'Java', 	'9'),
+                    ('Name4',	'Sql', 		'5'),
+                    ('Name5',	'Java', 	'4'),
+                    ('Name6',	'Spring', 	'5'),
+                    ('Name7',	'Java', 	'8'),
+                    ('Name8',	'Spring', 	'8'),
+					('Name9',	'Sql', 	    '5'),
+                    ('Name10',	'Spring', 	'4'),
+                    ('Name11',	'Sql', 	    '5'),
+                    ('Name12',	'Spring', 	'8');
